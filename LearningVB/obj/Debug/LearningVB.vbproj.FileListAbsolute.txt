@@ -1,0 +1,11 @@
+c:\users\michael\source\repos\LearningVB\LearningVB\bin\Debug\LearningVB.exe.config
+c:\users\michael\source\repos\LearningVB\LearningVB\bin\Debug\LearningVB.exe
+c:\users\michael\source\repos\LearningVB\LearningVB\bin\Debug\LearningVB.pdb
+c:\users\michael\source\repos\LearningVB\LearningVB\bin\Debug\LearningVB.xml
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.vbprojAssemblyReference.cache
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.Resources.resources
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.vbproj.GenerateResource.cache
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.vbproj.CoreCompileInputs.cache
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.exe
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.xml
+c:\users\michael\source\repos\LearningVB\LearningVB\obj\Debug\LearningVB.pdb
