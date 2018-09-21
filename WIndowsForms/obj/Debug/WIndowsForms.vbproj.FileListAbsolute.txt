@@ -1,0 +1,12 @@
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\WIndowsForms.exe.config
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\WIndowsForms.exe
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\WIndowsForms.pdb
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\WIndowsForms.xml
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.vbprojAssemblyReference.cache
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.Form1.resources
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.Resources.resources
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.vbproj.GenerateResource.cache
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.vbproj.CoreCompileInputs.cache
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.exe
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.xml
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.pdb
