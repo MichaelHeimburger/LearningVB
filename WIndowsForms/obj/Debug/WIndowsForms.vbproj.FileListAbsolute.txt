@@ -10,3 +10,8 @@ C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.vbp
 C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.exe
 C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.xml
 C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.pdb
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\EntityFramework.dll
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\EntityFramework.xml
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.vbproj.CopyComplete

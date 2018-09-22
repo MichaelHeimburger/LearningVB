@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="6e60070b002a4984aecfb71918d7f87d" Name="Diagram1">
+        <EntityTypeShape EntityType="SuperMarketTestModel.Customer" Width="1.5" PointX="0.75" PointY="0.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.CustomerOrder" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.Market" Width="1.5" PointX="0.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.OrderItem" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.Product" Width="1.5" PointX="0.75" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.Stock" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.sysdiagram" Width="1.5" PointX="2.75" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="SuperMarketTestModel.Warehouse" Width="1.5" PointX="4.75" PointY="6.875" IsExpanded="true" />
+        <AssociationConnector Association="SuperMarketTestModel.fk_customerorder_customer" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperMarketTestModel.fk_customerorder_market" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperMarketTestModel.orderitem_order" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperMarketTestModel.fk_stock_market" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperMarketTestModel.orderitem_product" ManuallyRouted="false" />
+        <AssociationConnector Association="SuperMarketTestModel.fk_stock_product" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
