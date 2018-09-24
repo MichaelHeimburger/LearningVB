@@ -14,25 +14,55 @@
     End Sub
 
     Private Sub BtnCreate_Click(sender As Object, e As EventArgs) Handles BtnCreate.Click
-
+        Dim db = New SuperMarketTestEntities
         If LblID.Text <> "/" Then
-
-            Dim db = New SuperMarketTestEntities
             Dim productUpdate = (From a In db.Products Where a.ProductID = LblID.Text Select a).FirstOrDefault
             productUpdate.Name = TxtName.Text
             productUpdate.Price = TxtPrice.Text
             productUpdate.Brand = TxtBrand.Text
-            db.Entry(productUpdate)
+            db.Entry(productUpdate).State = Entity.EntityState.Modified
             db.SaveChanges()
             productFunctions.ShowProduct()
             productFunctions.ClearProductForm()
-
+        Else
+            Dim newProduct = New Product
+            newProduct.Name = TxtName.Text
+            newProduct.Price = TxtPrice.Text
+            newProduct.Brand = TxtBrand.Text
+            db.Products.Add(newProduct)
+            db.SaveChanges()
+            productFunctions.ClearProductForm()
+            productFunctions.ShowProduct()
         End If
     End Sub
 
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles BtnClear.Click
         productFunctions.ClearProductForm()
     End Sub
+
+    Private Sub BtnDelete_Click(sender As Object, e As EventArgs) Handles BtnDelete.Click
+        Dim db = New SuperMarketTestEntities
+        If LblID.Text <> "/" Then
+            Dim productDelete = (From x In db.Products Where x.ProductID = LblID.Text Select x).FirstOrDefault
+            db.Products.Remove(productDelete)
+            db.SaveChanges()
+        End If
+        productFunctions.ClearProductForm()
+        productFunctions.ShowProduct()
+    End Sub
+
+    Public Sub Programs_Click(sender As Object, e As EventArgs) Handles Programs.Click
+        'nothing here
+    End Sub
+
+    Public Sub ProgramsProducts_Click(sender As Object, e As EventArgs) Handles ProgramsProducts.Click
+
+    End Sub
+
+    Public Sub ProgramsStoreInventory_Click(sender As Object, e As EventArgs) Handles ProgramsStoreInventory.Click
+
+    End Sub
+
 End Class
 
 
