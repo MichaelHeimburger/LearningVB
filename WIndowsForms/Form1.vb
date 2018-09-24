@@ -1,22 +1,37 @@
 ﻿Public Class Form1
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
-        MessageBox.Show("Look at this text")
-    End Sub
+    Private productFunctions As New ProductFunctions
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim db As SuperMarketTestEntities = New SuperMarketTestEntities()
-        Dim products = db.Products.ToList
-        Dim ProductViewList = New List(Of ProductView)
-        For Each product As Product In products
-            Dim cv = New ProductView
-            cv.Name = product.Name
-            cv.Price = product.Price
-            cv.Brand = product.Brand
-            cv.ID = product.ProductID
-            ProductViewList.Add(cv)
-        Next
-        ProductData.DataSource = ProductViewList
-        'Instead of returning all products right from data base we are sending in a viewmmodel beucase by default it shows foregin keys also?
+        productFunctions.ShowProduct()
+    End Sub
+
+    Private Sub ProductData_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles ProductData.CellContentClick
+        LblID.Text = ProductData.SelectedRows(0).Cells(0).Value.ToString 'id 
+        TxtName.Text = ProductData.SelectedRows(0).Cells(1).Value.ToString 'name
+        TxtPrice.Text = ProductData.SelectedRows(0).Cells(2).Value.ToString 'price
+        TxtBrand.Text = ProductData.SelectedRows(0).Cells(3).Value.ToString 'brand
+        BtnCreate.Text = "Update"
+    End Sub
+
+    Private Sub BtnCreate_Click(sender As Object, e As EventArgs) Handles BtnCreate.Click
+
+        If LblID.Text <> "/" Then
+
+            Dim db = New SuperMarketTestEntities
+            Dim productUpdate = (From a In db.Products Where a.ProductID = LblID.Text Select a).FirstOrDefault
+            productUpdate.Name = TxtName.Text
+            productUpdate.Price = TxtPrice.Text
+            productUpdate.Brand = TxtBrand.Text
+            db.Entry(productUpdate)
+            db.SaveChanges()
+            productFunctions.ShowProduct()
+            productFunctions.ClearProductForm()
+
+        End If
+    End Sub
+
+    Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles BtnClear.Click
+        productFunctions.ClearProductForm()
     End Sub
 End Class
 

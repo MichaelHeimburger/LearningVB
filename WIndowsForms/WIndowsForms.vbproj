@@ -81,7 +81,8 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.vb" />
+    <Compile Include="ProductFuncitons.vb" />
+    <Compile Include="ProductView.vb" />
     <Compile Include="Customer.vb">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
