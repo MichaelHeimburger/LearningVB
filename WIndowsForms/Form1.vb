@@ -34,6 +34,7 @@
             productFunctions.ClearProductForm()
             productFunctions.ShowProduct()
         End If
+        Form2.GrdAllProducts.DataSource = productFunctions.GetProductViewModels
     End Sub
 
     Private Sub BtnClear_Click(sender As Object, e As EventArgs) Handles BtnClear.Click
@@ -51,15 +52,15 @@
         productFunctions.ShowProduct()
     End Sub
 
-    Public Sub Programs_Click(sender As Object, e As EventArgs) Handles Programs.Click
+    Public Sub Programs_Click(sender As Object, e As EventArgs)
         'nothing here
     End Sub
 
-    Public Sub ProgramsProducts_Click(sender As Object, e As EventArgs) Handles ProgramsProducts.Click
+    Public Sub ProgramsProducts_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Public Sub ProgramsStoreInventory_Click(sender As Object, e As EventArgs) Handles ProgramsStoreInventory.Click
+    Public Sub ProgramsStoreInventory_Click(sender As Object, e As EventArgs)
 
     End Sub
 

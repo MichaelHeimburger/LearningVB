@@ -39,15 +39,12 @@ Partial Class Form1
         Me.TxtPrice = New System.Windows.Forms.TextBox()
         Me.BtnClear = New System.Windows.Forms.Button()
         Me.BtnDelete = New System.Windows.Forms.Button()
-        Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
-        Me.Programs = New System.Windows.Forms.ToolStripDropDownButton()
-        Me.ProgramsProducts = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ProgramsStoreInventory = New System.Windows.Forms.ToolStripMenuItem()
         Me.test = New System.Windows.Forms.Button()
+        Me.UserControl11 = New WIndowsForms.UserControl1()
+        Me.Label2 = New System.Windows.Forms.Label()
         CType(Me.SuperMarketTestDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProductData, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip1.SuspendLayout()
         Me.SuspendLayout()
         '
         'BtnCreate
@@ -183,37 +180,6 @@ Partial Class Form1
         Me.BtnDelete.Text = "Delete"
         Me.BtnDelete.UseVisualStyleBackColor = False
         '
-        'ToolStrip1
-        '
-        Me.ToolStrip1.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Programs})
-        Me.ToolStrip1.Location = New System.Drawing.Point(0, 0)
-        Me.ToolStrip1.Name = "ToolStrip1"
-        Me.ToolStrip1.Size = New System.Drawing.Size(1032, 27)
-        Me.ToolStrip1.TabIndex = 13
-        Me.ToolStrip1.Text = "ToolStrip1"
-        '
-        'Programs
-        '
-        Me.Programs.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text
-        Me.Programs.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ProgramsProducts, Me.ProgramsStoreInventory})
-        Me.Programs.ImageTransparentColor = System.Drawing.Color.Magenta
-        Me.Programs.Name = "Programs"
-        Me.Programs.Size = New System.Drawing.Size(86, 24)
-        Me.Programs.Text = "Programs"
-        '
-        'ProgramsProducts
-        '
-        Me.ProgramsProducts.Name = "ProgramsProducts"
-        Me.ProgramsProducts.Size = New System.Drawing.Size(216, 26)
-        Me.ProgramsProducts.Text = "Products"
-        '
-        'ProgramsStoreInventory
-        '
-        Me.ProgramsStoreInventory.Name = "ProgramsStoreInventory"
-        Me.ProgramsStoreInventory.Size = New System.Drawing.Size(216, 26)
-        Me.ProgramsStoreInventory.Text = "StoreInventory"
-        '
         'test
         '
         Me.test.Location = New System.Drawing.Point(9, 401)
@@ -223,14 +189,34 @@ Partial Class Form1
         Me.test.Text = "test"
         Me.test.UseVisualStyleBackColor = True
         '
+        'UserControl11
+        '
+        Me.UserControl11.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.UserControl11.Location = New System.Drawing.Point(0, -7)
+        Me.UserControl11.Name = "UserControl11"
+        Me.UserControl11.Size = New System.Drawing.Size(1035, 29)
+        Me.UserControl11.TabIndex = 15
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 19.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(69, 47)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(199, 39)
+        Me.Label2.TabIndex = 16
+        Me.Label2.Text = "All Products"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.Highlight
         Me.ClientSize = New System.Drawing.Size(1032, 465)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.UserControl11)
         Me.Controls.Add(Me.test)
-        Me.Controls.Add(Me.ToolStrip1)
         Me.Controls.Add(Me.BtnDelete)
         Me.Controls.Add(Me.BtnClear)
         Me.Controls.Add(Me.TxtPrice)
@@ -249,8 +235,6 @@ Partial Class Form1
         CType(Me.SuperMarketTestDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ProductData, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip1.ResumeLayout(False)
-        Me.ToolStrip1.PerformLayout()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -272,9 +256,7 @@ Partial Class Form1
     Friend WithEvents TxtPrice As TextBox
     Friend WithEvents BtnClear As Button
     Friend WithEvents BtnDelete As Button
-    Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents Programs As ToolStripDropDownButton
-    Friend WithEvents ProgramsProducts As ToolStripMenuItem
-    Friend WithEvents ProgramsStoreInventory As ToolStripMenuItem
     Friend WithEvents test As Button
+    Friend WithEvents UserControl11 As UserControl1
+    Friend WithEvents Label2 As Label
 End Class

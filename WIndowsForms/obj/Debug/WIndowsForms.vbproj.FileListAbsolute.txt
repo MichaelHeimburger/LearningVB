@@ -15,3 +15,6 @@ C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.vbp
 C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.exe
 C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.xml
 C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.pdb
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.UserControl1.resources
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.Form2.resources
+C:\Users\Michael\source\repos\LearningVB\WIndowsForms\obj\Debug\WIndowsForms.MarketSelect.resources

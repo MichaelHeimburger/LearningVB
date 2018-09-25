@@ -35,5 +35,14 @@
             ViewBrand = value
         End Set
     End Property
+    Private ViewAmount As String
+    Public Property Amount() As String
+        Get
+            Return ViewAmount
+        End Get
+        Set(ByVal value As String)
+            ViewAmount = value
+        End Set
+    End Property
 End Class
 
